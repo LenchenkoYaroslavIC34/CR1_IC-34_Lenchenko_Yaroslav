@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>лаба 1</title>
+</head>
+<body>
+    <h1>Що таке HTML?</h1>
+    <p>HTML (HyperText Markup Language) - це стандартна мова розмітки для створення веб-сторінок.</p>
+
+    <h1>HTML Редактори коду та IDE</h1>
+    <p>Для написання HTML-коду можна використовувати різні редактори коду та IDE, такі як Visual Studio Code, Sublime Text, Atom, Brackets тощо.</p>
+
+    <h1>HTML Основні приклади</h1>
+    <p>Ось приклад простої HTML-сторінки:</p>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Title of the document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;This is a heading&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
+    <h1>HTML Елементи</h1>
+    <p>HTML елементи складаються з тегів, атрибутів та вмісту. Наприклад, &lt;p&gt;Текст параграфа&lt;/p&gt;.</p>
+
+    <h1>HTML Атрибути</h1>
+    <p>Атрибути надають додаткову інформацію про елементи HTML. Наприклад, атрибут href в елементі &lt;a&gt; визначає URL-адресу посилання.</p>
+
+    <h1>HTML Параграфи</h1>
+    <p>Параграфи створюються за допомогою тегу &lt;p&gt;</p>
+    <p>Це приклад параграфа.</p>
+
+    <h1>HTML Посилання</h1>
+    <p>Посилання створюються за допомогою тегу &lt;a&gt;</p>
+    <a href="https://www.example.com">Це посилання</a>
+
+    <h2>HTML Посилання - Різні кольори</h2>
+    <p>Посилання можуть мати різні кольори за допомогою CSS</p>
+    <a href="https://www.example.com" style="color: red;">Червоне посилання</a>
+
+    <h2>HTML Посилання - Створення закладок</h2>
+    <p>Закладки створюються за допомогою атрибуту id</p>
+    <a href="#section1">Перейти до секції 1</a>
+    <h2 id="section1">Секція 1</h2>
+
+    <h1>HTML Зображення</h1>
+    <p>Зображення додаються за допомогою тегу &lt;img&gt;</p>
+    <img src="https://loremflickr.com/200/200/cat?random=1" alt="Example Image">
+
+    <h2>HTML Карти зображень</h2>
+    <p>Карта зображень дозволяє створювати інтерактивні області на зображенні</p>
+    <img src="https://loremflickr.com/200/200/cat?random=2" alt="Example Image" usemap="#image-map">
+    <map name="image-map">
+        <area shape="rect" coords="34,44,270,350" href="https://www.example.com" alt="Example">
+    </map>
+
+    <h2>HTML Фонові зображення</h2>
+    <p>Фонові зображення додаються за допомогою CSS</p>
+    <div style="background-image: url('https://loremflickr.com/200/200/cat?random=3');
+            height: 100px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;">
+        Це блок з фоновим зображенням.
+    </div>
+
+    <h2>HTML елемент &lt;picture&gt;</h2>
+    <p>Елемент &lt;picture&gt; дозволяє визначати різні зображення для різних розмірів екранів</p>
+    <picture>
+        <source srcset="https://loremflickr.com/200/200/cat?random=5" media="(max-width: 600px)">
+        <source srcset="https://loremflickr.com/200/200/cat?random=4" media="(min-width: 601px)">
+        <img src="https://loremflickr.com/200/200/cat?random=4" alt="Example Image">
+    </picture>
+
+    <h2>HTML Favicon / Фавікон</h2>
+    <p>Фавікон додається за допомогою тегу &lt;link&gt; в секції &lt;head&gt;</p>
+    <pre>
+        &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+    </pre>
+
+    <h1>HTML Таблиці</h1>
+    <p>Таблиці створюються за допомогою тегів &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; та &lt;td&gt;</p>
+    <table border="1">
+        <tr>
+            <th>Назва</th>
+            <th>Значення</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Основи</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Стилізація</td>
+        </tr>
+    </table>
+
+    <h2>HTML Межі таблиці</h2>
+    <p>Межі таблиці додаються за допомогою атрибуту border або CSS</p>
+    <table style="border: 5px solid black;">
+        <tr>
+            <th style="border: 3px solid black;">Назва</th>
+            <th style="border: 3px solid black;">Значення</th>
+        </tr>
+        <tr>
+            <td style="border: 3px solid black;">HTML</td>
+            <td style="border: 3px solid black;">Основи</td>
+        </tr>
+        <tr>
+            <td style="border: 3px solid black;">CSS</td>
+            <td style="border: 3px solid black;">Стилізація</td>
+        </tr>
+    </table>
+
+    <h2>HTML Розмір таблиці</h2>
+    <p>Розмір таблиці можна змінювати за допомогою атрибутів width та height або CSS. Наприклад:</p>
+    <table style="width: 50%; height: 100px; border: 1px solid black;">
+        <tr>
+            <th>Назва</th>
+            <th>Значення</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Основи</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Стилізація</td>
+        </tr>
+    </table>
+
+    <h2>HTML Заголовки таблиць</h2>
+    <p>Заголовки таблиць створюються за допомогою тегу &lt;th&gt;</p>
+    <table border="1">
+        <tr>
+            <th>Назва</th>
+            <th>Значення</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Основи</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Стилізація</td>
+        </tr>
+    </table>
+
+    <h2>HTML Таблиці. Padding & Spacing</h2>
+    <p>Відступи в таблицях можна налаштовувати за допомогою CSS. Наприклад:</p>
+    <table style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <th style="padding: 10px;">Назва</th>
+            <th style="padding: 10px;">Значення</th>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">HTML</td>
+            <td style="padding: 10px;">Основи</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">CSS</td>
+            <td style="padding: 10px;">Стилізація</td>
+        </tr>
+    </table>
+
+    <h2>HTML Таблиці. Colspan & Rowspan</h2>
+    <p>Атрибути colspan та rowspan дозволяють об'єднувати комірки таблиці. Наприклад:</p>
+    <table border="1">
+        <tr>
+            <th colspan="2">Заголовок</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Об'єднана комірка</td>
+            <td>Комірка 1</td>
+        </tr>
+        <tr>
+            <td>Комірка 2</td>
+        </tr>
+    </table>
+
+    <h2>HTML Стилізація таблиць</h2>
+    <p>Таблиці можна стилізувати за допомогою CSS. Наприклад:</p>
+    <table style="border: 1px solid black; border-collapse: collapse; width: 100%;">
+        <tr style="background-color: #f2f2f2;">
+            <th style="padding: 10px;">Назва</th>
+            <th style="padding: 10px;">Значення</th>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">HTML</td>
+            <td style="padding: 10px;">Основи</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px;">CSS</td>
+            <td style="padding: 10px;">Стилізація</td>
+        </tr>
+    </table>
+
+    <h2>HTML Група стовпців таблиці</h2>
+    <p>Групи стовпців створюються за допомогою тегу &lt;colgroup&gt;. Наприклад:</p>
+    <table border="1">
+        <colgroup>
+            <col span="1" style="background-color: #f2f2f2;">
+            <col span="1" style="background-color: #ffffff;">
+        </colgroup>
+        <tr>
+            <th>Назва</th>
+            <th>Значення</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Основи</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Стилізація</td>
+        </tr>
+    </table>
+
+    <h1>HTML Списки</h1>
+    <p>Списки можуть бути впорядкованими (нумерованими) або невпорядкованими (маркерованими). Наприклад:</p>
+
+    <h2>Невпорядкований список</h2>
+    <ul>
+        <li>Елемент 1</li>
+        <li>Елемент 2</li>
+        <li>Елемент 3</li>
+    </ul>
+
+    <h2>Впорядкований список</h2>
+    <ol>
+        <li>Елемент 1</li>
+        <li>Елемент 2</li>
+        <li>Елемент 3</li>
+    </ol>
+
+    <h2>Інші списки</h2>
+    <dl>
+        <dt>Термін 1</dt>
+        <dd>Визначення 1</dd>
+        <dt>Термін 2</dt>
+        <dd>Визначення 2</dd>
+    </dl>
+
+    <h1>HTML Форми</h1>
+    <p>Форми використовуються для збору даних від користувачів. Наприклад:</p>
+    <form action="/submit" method="post">
+        <label for="name">Ім'я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Електронна пошта:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+
+    <h2>HTML Атрибути форми</h2>
+    <p>Форми мають різні атрибути, такі як action, method, enctype тощо</p>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <label for="file">Виберіть файл:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+        <input type="submit" value="Завантажити">
+    </form>
+
+    <h2>HTML Елементи форми</h2>
+    <p>Форми містять різні елементи, такі як текстові поля, кнопки, прапорці тощо. Наприклад:</p>
+    <form>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="gender">Стать:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловік</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жінка</label><br><br>
+
+        <label for="hobbies">Хобі:</label><br>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Читання</label><br>
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        <label for="traveling">Подорожі</label><br><br>
+
+        <label for="country">Країна:</label><br>
+        <select id="country" name="country">
+            <option value="ua">Україна</option>
+            <option value="us">США</option>
+            <option value="uk">Велика Британія</option>
+        </select><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+
+    <h2>HTML Типи вводу</h2>
+    <p>HTML підтримує різні типи вводу, такі як text, email, password, date тощо. Наприклад:</p>
+    <form>
+        <label for="date">Дата народження:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="color">Улюблений колір:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+
+    <h2>HTML Атрибути вводу</h2>
+    <p>Елементи вводу мають різні атрибути, такі як placeholder, required, readonly тощо. Наприклад:</p>
+    <form>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username" placeholder="Введіть ім'я користувача" required><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" placeholder="Введіть пароль" required><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+
+    <h2>HTML Атрибути Input форми</h2>
+    <p>Елементи вводу форми мають різні атрибути, такі як value, name, id тощо. Наприклад:</p>
+    <form>
+        <label for="username">Ім'я користувача:</label><br>
+        <input type="text" id="username" name="username" value="defaultUser"><br><br>
+
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" value="defaultPass"><br><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
